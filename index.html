@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Css/asierso.css">
+    <link rel="icon" type="image" href="Assets/pplace.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta charset="UTF-7">
+    <title>Pixel place</title>
+</head>
+
+<body>
+    <div id="overview">
+        <div class="loader"></div>
+    </div>
+    <div id="container">
+        <div id="ownerInfo">
+            <span
+                style="text-align:center;opacity: .6;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none; ">Propiedades
+                del pixel</span>
+            <div id="pixelColor" onclick="pickColor()">
+                <span id="pixelColorName">#000000</span>
+            </div>
+        </div>
+        <canvas id="canvas" width="300" height="300">
+
+        </canvas>
+        <div id="colorBox">
+            <div id="colorPreview" data-jscolor='{"value":"#ff8080"}'></div>
+        </div>
+
+    </div>
+    <script src="Scripts/overviews.js"></script>
+    <script src="Scripts/game.js "></script>
+    <script src="Scripts/jscolor.js"></script>
+    <script>
+        // These options apply to all color pickers on the page
+        jscolor.presets.default = {
+            padding: 16
+        };
+    </script>
+</body>
+
+</html>

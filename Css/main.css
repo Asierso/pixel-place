@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'PixelArt';
+    src: url('../m5x7.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+#colorBox {
+    z-index: 1;
+    height: 100px;
+    width: fit-content;
+    position: fixed;
+    top: 83%;
+    left: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: .65rem;
+    transform: translateZ(50px);
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.35);
+}
+
+#ownersList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: .75rem;
+    line-height: .95rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.owner {
+    padding: .5rem;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    background: rgba(44,44,44, 0.322);
+    border-radius: .65rem;
+    display: flex;
+    font-size: 15pt;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+
+.ownerProfileName{
+    margin-left: .5rem;
+    margin-top: .65rem;
+}
+
+.ownerProfileScores{
+    font-weight: 1000;
+    margin-top: .65rem;
+}
+
+.ownerProfileDataContent{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.ownerProfileImg{
+    width: 2rem;
+    height: 2rem;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    border-radius:5rem;
+}
+
+#colorPreview {
+    display: flex;
+    width: 100px;
+    transform: translateZ(-50px);
+    padding: .75rem;
+    border-radius: .65rem;
+    background-color: #ff8080;
+}
+
+.colorPalette {
+    width: 100px;
+    height: 100%;
+    background-color: #a200e0;
+}
+
+#topBar .ptitle {
+    font-family: 'PixelArt';
+    font-weight: 800;
+    font-size: 45pt;
+    margin-left: .35rem;
+    background: linear-gradient(120deg, #EA52F8 0%, #0066FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+#ownerInfo{
+    position: absolute;
+    top:0;left:0;
+    z-index: 4;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background: #fff;
+    border-radius: .65rem;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    padding-top: .2rem;
+    display: flex;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    flex-direction: column;
+}
+
+#ownerUserName{
+    background:rgba(44, 44, 44, 0.32);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: .65rem;
+    padding: .5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+
+}
+#ownerInfoAccountCircle {
+    width: 2.5rem;
+    height: 2.5rem;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 5rem;
+}
+
+#ownerUserNameText{
+    font-size: 12pt;
+    margin-top:.65rem;
+    margin-left:.65rem;
+}
+
+#pixelColor{
+    margin-top:.5rem;
+    background:rgba(44, 44, 44, 0.32);
+    border-radius: .65rem;
+    padding: .5rem;
+    vertical-align: middle;
+    font-size: 10pt;
+    text-align: center;
+}
+#pixelColorName{
+    margin:auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
